@@ -1,3 +1,5 @@
+political_decisions = {
+
 ##Treaty of Vienna##
 
 treaty_of_Vienna_hungary = {
@@ -21,11 +23,11 @@ treaty_of_Vienna_hungary = {
 
 		effect = {
 			
-			GER = { country_event = { id = 2000000000 days = 2 } }
+			GER = { country_event = { id = 2000000000 days = 0 } }
 			
 		}
 		ai_will_do = { factor = 1 }
-
+}
 
 ##Ultimatum to Hungary##
 
@@ -37,7 +39,7 @@ ultimatum_to_hungary = {
 			
 			tag = GER
                         has_global_flag = greatest_germany
-                        exists = HUN
+                        NOT = { has_global_flag = hungarian_ultimatum_sent }
                         AUS_654 = { owned_by = HUN }
                         AUS_657 = { owned_by = HUN }
                         AUS_2538 = { owned_by = HUN }
@@ -45,13 +47,17 @@ ultimatum_to_hungary = {
                         AUS_624 = { owned_by = HUN }
                 }
 
-                allow = { nationalism_n_imperialism = 1 }
-
+                allow = { NOT = { has_global_flag = hungarian_ultimatum_sent } }
+                           
+          
                 effect = {
 			
-			GER = { country_event = { id = 2000000007 days = 2 } }
+			GER = { country_event = { id = 2000000007 days = 2} }
+                        set_global_flag = hungarian_ultimatum_sent
 			
 		}
                 ai_will_do = { factor = 0.1 }
+
+}
 
 }

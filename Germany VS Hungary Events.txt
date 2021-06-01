@@ -322,24 +322,24 @@ country_event = {
 	option = {
                name = "EVTOPTA2000000007"
                HUN = { country_event = { id = 2000000008 days = 5 } }
-               set_global_flag = hungarian_ultimatum_sent
+               
                ai_chance = {factor = 10}
         }       
         option = {
                name = "EVTOPTB2000000007"
                HUN = { country_event = { id = 2000000009 days = 5 } }
-               set_global_flag = hungarian_ultimatum_sent
+               
                ai_chance = {factor = 5}
         }
         option = {
                name = "EVTOPTC2000000007"
                HUN = { country_event = { id = 2000000010 days = 5 } }
-               set_global_flag = hungarian_ultimatum_sent
+               
         }
         option = {
                name = "EVTOPTD2000000007"
                HUN = { country_event = { id = 2000000011 days = 5 } }
-               set_global_flag = hungarian_ultimatum_sent
+               
                ai_chance = {factor = 0.5}
         }
         option = {
@@ -351,13 +351,11 @@ country_event = {
 	              call_ally = no                      
                } 
                badboy = 5
-               set_global_flag = hungarian_ultimatum_sent
-        option = {
-               name = "EVTOPTF2000000007"
-        }
-        ai_chance = { factor = 0 }
-        }
+               
+       }
 }
+        
+ 
 
 ##Boderlands Ultimatum##
  
@@ -670,3 +668,5 @@ country_event = {
                 GER = { country_event = { id = 2000000001 days = 5 } }
          }
 }
+
+
